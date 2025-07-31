@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - Library</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url(./lib_back.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: rgba(154, 205, 50, 0.9); /* yellowgreen with transparency */
+      padding: 50px 30px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 450px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .container img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      position: absolute;
+      top: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 3px solid white;
+    }
+
+    form {
+      margin-top: 50px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid black;
+      background: transparent;
+      color: black;
+      font-size: 1em;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: blue;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 20px;
+      margin-top: 20px;
+      font-size: 1em;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      border: 1px solid blue;
+    }
+
+    .login-link {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+
+    .login-link a {
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+
+    /* Responsive for smaller screens */
+    @media (max-width: 500px) {
+      .container {
+        padding: 40px 20px;
+      }
+
+      input[type="submit"] {
+        font-size: 0.95em;
+      }
+
+      .login-link {
+        font-size: 0.85em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="./user.jpg" alt="User Icon" />
+    <form action="./library.html" method="get">
+      <input type="text" placeholder="Username" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      
+      <div class="login-link">
+        Already have an account? <a href="login.html">Login</a>
+      </div>
+      
+      <input type="submit" value="Sign Up" />
+    </form>
+  </div>
+</body>
+</html>
